@@ -39,7 +39,7 @@ label start:
     v "Just pick someone to play as."
 menu:
 
-    v    "Pick your Protagonist"
+        "Pick your Protagonist"
 
         "Tiamite":
 
@@ -48,14 +48,18 @@ menu:
         "Calem":
 
             jump calem
-return
 
-    label tiamite:
-        v "Ah yes, Tia, from Honnis!"
-        v "Well enjoy the game!!"
+        "sans":
 
+            jump sans
+label sans:
+        v "Wanna have a bad time?"
         return
 
-    label calem:
+label tiamite:
+        v "Ah yes, Tia, from Honnis!"
+        v "Well enjoy the game!!"
+        return
+label calem:
         v "Hmmm, Interesting pick..."
         v "Well enjoy the game!!"
