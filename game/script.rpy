@@ -40,6 +40,7 @@ label start:
 menu:
 
     v    "Pick your Protagonist"
+    
         "Tiamite":
 
             jump tiamite
