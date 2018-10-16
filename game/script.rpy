@@ -37,7 +37,7 @@ label start:
     v "Pleased to meet you, %(player_name)s!"
     v "You know what, I just decided I don't care what your name is."
     v "Just pick someone to play as."
-    menu:
+menu:
 
     v    "Pick your Protagonist"
         "Tiamite":
