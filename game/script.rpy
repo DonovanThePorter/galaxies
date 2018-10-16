@@ -48,10 +48,14 @@ menu:
         "Calem":
 
             jump calem
+return
 
     label tiamite:
         v "Ah yes, Tia, from Honnis!"
         v "Well enjoy the game!!"
+
+        return
+
     label calem:
         v "Hmmm, Interesting pick..."
         v "Well enjoy the game!!"
