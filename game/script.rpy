@@ -41,7 +41,7 @@ menu:
 
     v    "Pick your Protagonist"
 
-    "Tiamite":
+        "Tiamite":
 
             jump tiamite
 
