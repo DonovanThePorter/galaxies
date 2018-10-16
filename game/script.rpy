@@ -40,7 +40,6 @@ label start:
     menu:
 
     v    "Pick your Protagonist"
-
         "Tiamite":
 
             jump tiamite
@@ -48,13 +47,6 @@ label start:
         "Calem":
 
             jump calem
-
-        "sans":
-
-            jump sans
-    label sans:
-        v "Wanna have a bad time?"
-        return
 
     label tiamite:
         v "Ah yes, Tia, from Honnis!"
