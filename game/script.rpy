@@ -50,7 +50,7 @@ label name:
 
     if player_name == "Eli":
         $ player_name="Eli"
-        v "That's a cool name!"
+        v "That's a better name than Donovan!"
 
     if player_name == "Hunter":
         $ player_name="Hunter"
