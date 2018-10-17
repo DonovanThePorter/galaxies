@@ -17,13 +17,7 @@ label start:
 
     scene bg room
 
-    v "Hello There!"
-    v "Welcome to the World of Palopia!!"
-    v "Who am I?"
-    v "..."
-    v "Don't worry about that."
-    v "Why don't you tell me who YOU are?"
-    $ player_name = renpy.input("What is your name?")
+    "What is your name?")
 
     $ player_name = player_name.strip()
 # The .strip() instruction removes any extra spaces the player
