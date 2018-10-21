@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 99: expected 'image_name_component' not found.
-    image "sans.jpg"
-          ^
+File "game/sans.rpy", line 5: expected 'image_name_component' not found.
+    show "3aa.png"
+         ^
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Sun Oct 21 11:26:06 2018
+Sun Oct 21 12:17:44 2018

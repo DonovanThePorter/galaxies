@@ -1,26 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 224, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/script.rpy", line 5, in script
-    show text "whoa there pardner" with dissolve
-Exception: Sayer 'music' is not defined.
+  File "game/sans.rpy", line 17, in script
+  File "game/sans.rpy", line 17, in <module>
+NameError: name 'process_list' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 224, in script call
-    call _splashscreen from _call_splashscreen_1
-  File "game/script.rpy", line 5, in script
-    show text "whoa there pardner" with dissolve
-  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\ast.py", line 650, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\ast.py", line 560, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'music' is not defined.
+  File "game/sans.rpy", line 17, in script
+  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\ast.py", line 1760, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\python.py", line 1944, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\python.py", line 1937, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/sans.rpy", line 17, in <module>
+NameError: name 'process_list' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.1.1.929
 Galaxies 0.10.16
-Sun Oct 21 11:16:09 2018
+Sun Oct 21 12:07:47 2018

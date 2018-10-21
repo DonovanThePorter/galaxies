@@ -19,7 +19,7 @@ label start:
 
     scene bg room
 
-    play music "monika-end.ogg"
+    play music "reality.mp3"
 
     v "Hello There!"
     v "Welcome to the World of Palopia!!"
@@ -86,6 +86,7 @@ menu:
             jump sans
 label sans:
         v "Wanna have a bad time?"
+        jump sans1
         return
 
 label tiamite:
