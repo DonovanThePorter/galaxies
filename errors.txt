@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/sans.rpy", line 5: expected 'image_name_component' not found.
-    show "3aa.png"
-         ^
+File "game/tch1.rpy", line 61: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        t "Io! I'm ready to go!
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Sun Oct 21 12:17:44 2018
+Sun Oct 21 12:48:29 2018
