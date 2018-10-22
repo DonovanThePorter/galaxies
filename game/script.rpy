@@ -19,7 +19,7 @@ label start:
 
     scene bg room
 
-    play music "reality.mp3"
+    play music "music/reality.mp3"
 
     v "Hello There!"
     v "Welcome to the World of Palopia!!"
@@ -99,7 +99,7 @@ label calem:
         v "Ya see, this part of the story hasn't been written yet... so uhhh"
         image sans = "sans.jpg"
         show sans
-        play music "seinfeld.mp3"
+        play music "music/seinfeld.mp3"
         v "This is all I got."
         return
 #Need a transition from Intro to both protagonists. Also need to decide when to split scripts
