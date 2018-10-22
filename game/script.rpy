@@ -3,7 +3,7 @@ label splashscreen:
     with Pause(1)
 
     play music "music/firefly.ogg"
-    
+
     show text "secret script is now enabled by typing your name as Monika" with dissolve
     with Pause(2)
 
@@ -97,12 +97,12 @@ label tiamite:
         jump tch1
 label calem:
         stop music fadeout 5.0
-        v "Hmmm, Interesting pick..."
-        v "Ya see, this part of the story hasn't been written yet... so uhhh"
-        image sans = "sans.jpg"
-        show sans
+        v "Hey I wrote some of Calems story, ya wanna see?"
+        v "Here it comes..."
+        image ok = "ok.png"
+        show ok
         play music "music/seinfeld.mp3"
-        v "This is all I got."
+        v "Gotcha."
         return
 #Need a transition from Intro to both protagonists. Also need to decide when to split scripts
 #We want more than one script so the game doesn't take ages too load. A la DDLC

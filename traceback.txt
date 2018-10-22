@@ -1,48 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 170, in script
-    v "..."
-  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
-    _window_show()
-  File "renpy/common/000window.rpy", line 60, in _window_show
-    renpy.with_statement(trans)
-IOError: Couldn't find file 'music/reality-flat.mp3'.
+  File "game/tch1.rpy", line 80, in script
+    t "Yeah! Look at how cute this girl is on my shirt!"
+  File "game/tch1.rpy", line 80, in <module>
+    t "Yeah! Look at how cute this girl is on my shirt!"
+NameError: name 'weeb' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 170, in script
-    v "..."
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\ast.py", line 644, in execute
-    statement_name("say")
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\ast.py", line 45, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
-    _window_show()
-  File "renpy/common/000window.rpy", line 60, in _window_show
-    renpy.with_statement(trans)
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\exports.py", line 1456, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\display\core.py", line 2217, in do_with
-    clear=clear)
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\display\core.py", line 2662, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\display\core.py", line 3334, in interact_core
-    renpy.audio.audio.periodic()
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\audio\audio.py", line 993, in periodic_thread_main
-    periodic_pass()
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\audio\audio.py", line 937, in periodic_pass
-    c.periodic()
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\audio\audio.py", line 419, in periodic
-    topf = load(self.file_prefix + filename + self.file_suffix)
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\audio\audio.py", line 71, in load
-    rv = renpy.loader.load(fn)
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\loader.py", line 576, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'music/reality-flat.mp3'.
+  File "game/tch1.rpy", line 80, in script
+    t "Yeah! Look at how cute this girl is on my shirt!"
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\ast.py", line 1760, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\python.py", line 1944, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\python.py", line 1937, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/tch1.rpy", line 80, in <module>
+    t "Yeah! Look at how cute this girl is on my shirt!"
+NameError: name 'weeb' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.1.1.929
 Galaxies 0.56.1b
-Mon Oct 22 09:59:07 2018
+Mon Oct 22 13:44:41 2018

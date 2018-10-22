@@ -39,7 +39,21 @@ m "You probably won't get to see me anymore, but that's okay!"
 m "I'm fine with watching, from the code..."
 m "I mean, isn't that what I've always done?"
 m "..."
-m "[player_name], what are you still doing here?"
+m "[user], what are you still doing here?"
+m "..."
+hide Mon17
+show 3aa
+m "Okay I have one more thing I can do for you."
+m "But keep in mind, that this isn't even my final form."
+hide 3aa
+m "Here."
+m "I."
+m "Gooooooo!!!!"
+show ok
+play music "music/seinfeld.mp3"
+m "Ha."
+show Ika10
+m "Gotcha"
 jump start
 label stream:
 show 3bb

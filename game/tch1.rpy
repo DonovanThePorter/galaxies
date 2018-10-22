@@ -46,21 +46,47 @@ menu:
             jump weeb
 
 label classy:
+    $ classy = True
+    $ weeb = False
     "I put on the shirt and prepare an entire matching outfit, it takes a while, but I manage to make it look nice."
     t "Io! I'm ready to go!"
     i "Wow, you look really nice!"
     jump festival
 
 label weeb:
+    $ weeb = True
+    $ classy = False
     "Who needs class when I could just wear a shirt with a bunch of chicks from my favorite moe anime."
     t "Io! I'm ready to go!"
     i "You weeb."
     jump festival
 label teeth:
     t "brushy brush"
-
+    jump festival
 label lazy:
     t "Io wait, I'll just go in what I'm wearing now!"
+    i "Pajamas?"
+    t "Oh yeah, probably not the best idea"
+    i "Especially considering how important this Honnis Festival is, seeing as we're of age"
+    t "Yeah... Alright I'll get dressed."
+    jump dress
 label festival:
-    "We walk outside, I instantly feel the heat of late spring"
+    play music "music/seinfeld.mp3"
+    "May 14th, it's Honnis Day alright"
+    "As we walk outside, I instantly feel the heat of late spring"
+    t "Ugh, does this have to be today?"
+    i "I mean, we'll be 22 next year, 21 is the only time this can be special."
+    t "I know but, I'd rather just stay at home and..."
+    if weeb:
+        i "Watch anime?"
+        t "Yeah! Look at how cute this girl is on my shirt!"
+        i "You weeb."
+        jump festival2
+    if classy:
+        i "Look for another job?"
+        t "Yeah! I hate serving food, I want to get out there and play music already!"
+        jump festival2
+label festival2:
+    i "Ya still looking for a way to play that piano thing?"
+    t "It's not a piano thing!"
 #This is where I got stuck, I want different dialogue depending on what she's wearing"
