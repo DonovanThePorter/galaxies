@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/sans.rpy", line 25: 'return' outside function
+File "game/sans.rpy", line 56: Line is indented, but the preceding hide statement statement does not expect a block. Please check this line's indentation.
+    show Ika10
+    ^
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Sun Oct 21 21:25:20 2018
+Mon Oct 22 13:11:33 2018

@@ -4,6 +4,7 @@ play music "music/monika-end.ogg"
 image 3aa = "monika/3aa.png"
 image 3bb = "monika/3bb.png"
 image Mon17 = "monika/Mon17.png"
+image Ika10 = "monika/Ika10.png"
 show 3aa
 init python:
     import subprocess
@@ -29,7 +30,7 @@ m "Feel free to mess around with shit, who cares if anything breaks here!"
 m "If you want to test some code, or some kind of event, copy paste it into the script here!"
 m "I'd use renpy to open the script up, and just do it now!"
 #Replace this line of text with whatever you want to test (Currently using to test sprite stuff -Donovan)
-$ stream_list = ["obs32.exe", "obs64.exe", "obs.exe", "xsplit.core.exe"]
+$ stream_list = ["spotify.exe"]
 if list(set(process_list).intersection(stream_list)):
     call stream
 hide 3aa
@@ -39,8 +40,22 @@ m "I'm fine with watching, from the code..."
 m "I mean, isn't that what I've always done?"
 m "..."
 m "[player_name], what are you still doing here?"
-
+jump start
 label stream:
 show 3bb
 hide Mon17
-m "Penis breath"
+m "Do you have Spotify open right now? Seriously? You better not be listening to music..."
+m "Like come on just listen to the music in game, it's way better!"
+hide 3bb
+jump sound
+hide 3bb
+return
+
+label sound:
+hide 3bb
+hide 3aa
+show Ika10
+m "By the way, did you know that there's a new sound test?"
+m "Go into preferences, and hit the test button"
+m "I think you'll like what you hear"
+hide Ika10

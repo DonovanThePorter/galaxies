@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.56b"
+define config.version = "0.56.1b"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -53,7 +53,7 @@ define config.has_voice = True
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
-# define config.sample_sound = "sample-sound.ogg"
+define config.sample_sound = "music/sample-sound.ogg"
 # define config.sample_voice = "sample-voice.ogg"
 
 
@@ -61,7 +61,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-#define config.main_menu_music = "firefly.ogg"
+define config.main_menu_music = "music/firefly.ogg"
 
 
 ## Transitions #################################################################

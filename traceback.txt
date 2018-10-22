@@ -1,38 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00keymap.rpy", line 411, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 411, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 421, in _execute_python_hide
-    renpy.take_screenshot((config.thumbnail_width, config.thumbnail_height))
-TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+  File "game/script.rpy", line 170, in script
+    v "..."
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+IOError: Couldn't find file 'music/reality-flat.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00keymap.rpy", line 411, in script
-    python hide:
-  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\ast.py", line 882, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\python.py", line 1913, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/00keymap.rpy", line 411, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 421, in _execute_python_hide
-    renpy.take_screenshot((config.thumbnail_width, config.thumbnail_height))
-  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\exports.py", line 1574, in take_screenshot
-    renpy.game.interface.take_screenshot(scale, background=background)
-  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\display\core.py", line 2112, in take_screenshot
-    surf = renpy.display.scale.smoothscale(surf, scale)
-  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\display\scale.py", line 95, in real_smoothscale
-    dest = pgrender.surface_unscaled(size, src)
-  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\display\pgrender.py", line 118, in surface
-    surf = Surface((width + 4, height + 4), 0, sample)
-TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'
+  File "game/script.rpy", line 170, in script
+    v "..."
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\ast.py", line 644, in execute
+    statement_name("say")
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\ast.py", line 45, in statement_name
+    i(name)
+  File "renpy/common/000window.rpy", line 98, in _window_auto_callback
+    _window_show()
+  File "renpy/common/000window.rpy", line 60, in _window_show
+    renpy.with_statement(trans)
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\exports.py", line 1456, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\display\core.py", line 2217, in do_with
+    clear=clear)
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\display\core.py", line 2662, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\display\core.py", line 3334, in interact_core
+    renpy.audio.audio.periodic()
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\audio\audio.py", line 993, in periodic_thread_main
+    periodic_pass()
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\audio\audio.py", line 937, in periodic_pass
+    c.periodic()
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\audio\audio.py", line 419, in periodic
+    topf = load(self.file_prefix + filename + self.file_suffix)
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\audio\audio.py", line 71, in load
+    rv = renpy.loader.load(fn)
+  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'music/reality-flat.mp3'.
 
 Windows-8-6.2.9200
 Ren'Py 7.1.1.929
- 
-Sun Oct 21 21:25:04 2018
+Galaxies 0.56.1b
+Mon Oct 22 09:59:07 2018
