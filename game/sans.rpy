@@ -9,7 +9,7 @@ m "Welcome to the super secret script!"
 m "I'll be your guide in this mess of a script."
 m "We're gonna add so many cool things to this game, and it starts here in the test script."
 m "Feel free to mess around with shit, who cares if anything breaks here!"
-m "If you want to test some code, or some kid of event, copy paste it into the script here!"
+m "If you want to test some code, or some kind of event, copy paste it into the script here!"
 m "I'd use renpy to open the script up, and just do it now!"
 #Replace this line of text with whatever you want to test (Currently using to test sprite stuff -Donovan)
 $ stream_list = ["obs32.exe", "obs64.exe", "obs.exe", "xsplit.core.exe"]
