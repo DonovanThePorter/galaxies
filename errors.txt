@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/sans.rpy", line 56: Line is indented, but the preceding hide statement statement does not expect a block. Please check this line's indentation.
-    show Ika10
-    ^
+File "game/script.rpy", line 23: if statement expects a non-empty block.
+    if randomnum ==3:
+                     ^
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Mon Oct 22 13:11:33 2018
+Mon Oct 22 18:40:00 2018

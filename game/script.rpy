@@ -4,12 +4,28 @@ label splashscreen:
 
     play music "music/firefly.ogg"
 
-    show text "secret script is now enabled by typing your name as Monika" with dissolve
-    with Pause(2)
+    $ randomnum = renpy.random.randint(1, 3) # (randomize between 1 and 2)
 
-    hide text with wipeleft
-    with Pause(1)
+    if randomnum ==1:
+        show text "Pal Studios Presents" with dissolve
+        with Pause(2)
 
+        hide text with wipeleft
+        with Pause(1)
+
+    if randomnum ==2:
+        show text "Monika died for this" with dissolve
+        with Pause(2)
+
+        hide text with wipeleft
+        with Pause(1)
+
+    if randomnum ==3:
+        show text "Attention Gamers..." with dissolve
+        with Pause(2)
+
+        hide text with wipeleft
+        with Pause(1)
     return
 
     define v = Character("Mysterious Voice", color="#c8ffc8")
@@ -65,6 +81,10 @@ label name:
     if player_name == "Maki":
         $ player_name="Maki"
         v "That's a really pretty name!"
+
+    if player_name == "Restart":
+        $ player_name="Restart"
+        jump splashscreen
 
     if player_name == "Monika":
         $ player_name="Monika"
