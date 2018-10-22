@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 23: if statement expects a non-empty block.
-    if randomnum ==3:
-                     ^
+File "game/script.rpy", line 34: expected 'image_name_component' not found.
+    hide with wipeleft
+        ^
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Mon Oct 22 18:40:00 2018
+Mon Oct 22 18:46:54 2018

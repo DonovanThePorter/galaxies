@@ -1,10 +1,10 @@
 label splashscreen:
     scene black
     with Pause(1)
-
+    image ok = "ok.png"
     play music "music/firefly.ogg"
 
-    $ randomnum = renpy.random.randint(1, 3) # (randomize between 1 and 2)
+    $ randomnum = renpy.random.randint(1, 4) # (randomize between 1 and 2)
 
     if randomnum ==1:
         show text "Pal Studios Presents" with dissolve
@@ -26,6 +26,9 @@ label splashscreen:
 
         hide text with wipeleft
         with Pause(1)
+
+    if randomnum ==4:
+        show ok with dissolve
     return
 
     define v = Character("Mysterious Voice", color="#c8ffc8")
