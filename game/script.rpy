@@ -4,7 +4,7 @@ label splashscreen:
     image ok = "ok.png"
     play music "music/firefly.ogg"
 
-    $ randomnum = renpy.random.randint(1, 4) # (randomize between 1 and 2)
+    $ randomnum = renpy.random.randint(1, 4) # (randomize between 1 and 4)
 
     if randomnum ==1:
         show text "Pal Studios Presents" with dissolve

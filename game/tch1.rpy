@@ -62,7 +62,9 @@ label weeb:
     jump festival
 label teeth:
     t "brushy brush"
-    jump festival
+    t "Oh crap I just got toothpaste all over my shirt"
+    t "I was gonna go out in this but I'll change I guess"
+    jump dress
 label lazy:
     t "Io wait, I'll just go in what I'm wearing now!"
     i "Pajamas?"
@@ -75,7 +77,7 @@ label festival:
     "May 14th, it's Honnis Day alright"
     "As we walk outside, I instantly feel the heat of late spring"
     t "Ugh, does this have to be today?"
-    i "I mean, we'll be 22 next year, 21 is the only time this can be special."
+    i "I mean, we'll be 19 next year, 18 is the only time this can be special."
     t "I know but, I'd rather just stay at home and..."
     if weeb:
         i "Watch anime?"
@@ -88,5 +90,17 @@ label festival:
         jump festival2
 label festival2:
     i "Ya still looking for a way to play that piano thing?"
-    t "It's not a piano thing!"
-#This is where I got stuck, I want different dialogue depending on what she's wearing"
+    t "It's not a piano thing! It's actually a very unique instrument"
+    i "No it's just a piano with a tube, same thing"
+    t "Maybe if you actually listened to me play every once and a while you'd know why it's special."
+    i "I'm sorry, I'm always busy with work so I can never make it out to see you."
+    t "Well, I have a performance at the festival with INSERT CHARACTERS NAME HERE so you'll have to hear me."
+    i "Then I'll be sure to look forward to it, where are they anyway?"
+    t "They said that they would meet me by the tree by the parking lot, but I don't see the over there."
+    i "Probably forgot about ya"
+    t "D-Don't say that! I'd hate them forever if they played without me!!"
+    "Phone ringing noises"
+    i "Oh hey that's my cousin, he's supposed to be visting with a few of his friends, I'll have to catch up to you."
+    t "Oh okay, I'll wait here for the group then. See ya."
+    "..."
+    #SOME SORT OF PASSAGE OF TIME IDK 
