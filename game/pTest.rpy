@@ -4,7 +4,7 @@ label pTest:
     define c = Character("Cthulhu")
     image cthulhu = "cthulhu.jpg"
 
-    c "Hello, I am Cthulhu."
+    v "Hello, I am Cthulhu."
     show cthulhu at truecenter
     with dissolve
 
@@ -12,40 +12,91 @@ label pTest:
 
 label q1:
     menu:
-        c "What brings you to my domain?"
+        v "You have a difficult test next week, what do you do?"
 
-        "The neverending quest for true friendship":
+        "Prepare by studying.":
             $ personality_points +=1
-            c "Eww. I don't make friends with puny mortals."
+            v "Responsible are we?"
             jump q2
 
-        "Nothing, just browsing":
-            c "Oh, you heard about the open house?"
+        "I can study later, I have other priorities":
+            v "Time management is important for success."
             jump q2
 
-        "I want to kill you!":
+        "Eh, who cares about some test, I'd rather watch anime!":
             $ personality_points -=1
-            c "Ha, you wish!"
+            v "Good taste."
             jump q2
 
 label q2:
     menu:
-        c "What is your favorite color?"
+        v "What is your favorite color?"
 
-        "Blue, duh":
+        "Blue":
             $personality_points +=1
-            c "Wow, you are so basic."
-            jump score
+            v "Wow, you are so basic."
+            jump q3
 
         "I like them all":
-            c "Fukin figget"
-            jump score
+            v "Indecisive are we?"
+            jump q3
 
         "Death":
             $personality_points -=1
-            c "Jesus, and people say I'm evil"
+            v "Whoa there, we're not even 5 minutes in, what are you trying to do?"
+            jump q3
+
+label q3:
+    menu:
+        v "What type of music is best?"
+
+        "Jazz":
+            $personality_points +=1
+            v "I'm glad ya like jazz"
+            jump q4
+
+        "Pop":
+            v "Insert response here"
+            jump q4
+
+        "Death Metal":
+            $personality_points -=1
+            v "aaaa"
+            jump q4
+
+label q4:
+    menu:
+        v "You find a wallet outside of a building, what do you do?"
+
+        "Turn it in, it's probably really important":
+            $personality_points +=1
+            v "I'm glad ya like jazz"
+            jump q5
+
+        "Leave it, I'm sure someone will come back for it.":
+            v "Insert response here"
+            jump q5
+
+        "Ayyy free spending money":
+            $personality_points -=1
+            v "aaaa"
+            jump q5
+label q5:
+    menu:
+        v "What's your opinion on puns?"
+
+        "Humor is subjective, end quiz please.":
+            $personality_points +=1
+            v "I'm glad ya like jazz"
             jump score
 
+        "They're punbearable":
+            v "Insert response here"
+            jump score
 
+        "I don't like where this is going, can I get a refund on this game?":
+            $personality_points -=1
+            v "aaaa"
+            jump score
 label score:
     "Your score is:" "[personality_points]"
