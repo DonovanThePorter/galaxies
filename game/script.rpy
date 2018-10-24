@@ -79,7 +79,8 @@ label name:
 
     if player_name == "Hunter":
         $ player_name="Hunter"
-        v "That's a cool name!"
+        v "Praise Lord Cthulhu!"
+        jump pTest
 
     if player_name == "Maki":
         $ player_name="Maki"
