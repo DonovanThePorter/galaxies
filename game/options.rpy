@@ -23,13 +23,13 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "0.5 alpha"
+define config.version = "0.0.5 alpha"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""hey
 """)
 
 
@@ -61,7 +61,7 @@ define config.sample_sound = "music/sample-sound.ogg"
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "music/Bastard.ogg"
+define config.main_menu_music = "music/Caramelldansen.mp3"
 
 
 ## Transitions #################################################################

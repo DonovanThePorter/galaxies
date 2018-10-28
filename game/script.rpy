@@ -1,3 +1,4 @@
+#This script handles this splashscreens, introduction, and personality test.
 label splashscreen:
     scene black
     with Pause(1)
@@ -80,7 +81,10 @@ label name:
     if player_name == "Hunter":
         $ player_name="Hunter"
         v "Praise Lord Cthulhu!"
-        jump pTest
+
+    if player_name == "Credits":
+        $ player_name="Credits"
+        jump credits        
 
     if player_name == "Maki":
         $ player_name="Maki"
@@ -96,20 +100,114 @@ label name:
         jump sans1
 
     v "You know what, I just decided I don't care what your name is."
-    v "Just pick someone to play as."
+    v "Just take this cool quiz"
 #EVENTUALLY THIS WILL BE REPLACED WITH THE PERSONALITY TEST
-label menu1:
-menu:
+label pTest:
+    $ personality_type = "?"
+    $ personality_points = 0
+    define c = Character("Cthulhu")
+    image cthulhu = "cthulhu.jpg"
 
-        "Pick your Protagonist"
+    v "Hey so instead of another script I just put everything in here weeee"
+    show cthulhu at truecenter
+    with dissolve
 
-        "Tiamite":
+    jump q1
 
-            jump tiamite
+label q1:
+    menu:
+        v "You have a difficult test next week, what do you do?"
 
-        "Calem":
+        "Prepare by studying.":
+            $ personality_points +=1
+            v "Responsible are we?"
+            jump q2
 
-            jump calem
+        "I can study later, I have other priorities":
+            v "Time management is important for success."
+            jump q2
+
+        "Eh, who cares about some test, I'd rather watch anime!":
+            $ personality_points -=1
+            v "Good taste."
+            jump q2
+
+label q2:
+    menu:
+        v "What is your favorite color?"
+
+        "Blue":
+            $personality_points +=1
+            v "Wow, you are so basic."
+            jump q3
+
+        "I like them all":
+            v "Indecisive are we?"
+            jump q3
+
+        "Death":
+            $personality_points -=1
+            v "Whoa there, we're not even 5 minutes in, what are you trying to do?"
+            jump q3
+
+label q3:
+    menu:
+        v "What type of music is best?"
+
+        "Jazz":
+            $personality_points +=1
+            v "I'm glad ya like jazz"
+            jump q4
+
+        "Pop":
+            v "Insert response here"
+            jump q4
+
+        "Death Metal":
+            $personality_points -=1
+            v "aaaa"
+            jump q4
+
+label q4:
+    menu:
+        v "You find a wallet outside of a building, what do you do?"
+
+        "Turn it in, it's probably really important":
+            $personality_points +=1
+            v "I'm glad ya like jazz"
+            jump q5
+
+        "Leave it, I'm sure someone will come back for it.":
+            v "Insert response here"
+            jump q5
+
+        "Ayyy free spending money":
+            $personality_points -=1
+            v "aaaa"
+            jump q5
+label q5:
+    menu:
+        v "What's your opinion on puns?"
+
+        "Humor is subjective, end quiz please.":
+            $personality_points +=1
+            v "I'm glad ya like jazz"
+            jump score
+
+        "They're punbearable":
+            v "Insert response here"
+            jump score
+
+        "I don't like where this is going, can I get a refund on this game?":
+            $personality_points -=1
+            v "aaaa"
+            jump score
+label score:
+    "Your score is:" "[personality_points]"
+    if personality_points < 0:
+        jump calem
+    else:
+        jump tiamite
 label sans:
         v "Wanna have a bad time?"
         jump sans1
@@ -121,6 +219,7 @@ label tiamite:
         jump tch1
 label calem:
         stop music fadeout 5.0
+        hide image cthulhu
         v "Hey I wrote some of Calems story, ya wanna see?"
         v "Here it comes..."
         image ok = "ok.png"
@@ -233,7 +332,3 @@ label name3:
         $ player_name="Monika"
         v "I like that name."
         jump sans1
-
-    v "You know what, I just decided I don't care what your name is."
-    v "Just pick someone to play as."
-    jump menu1
