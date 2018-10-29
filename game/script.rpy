@@ -96,14 +96,6 @@ label name:
 
     if player_name == "Umi":
         $ player_name= "Umi"
-        v "Thank you for becoming the best waifu to exist"
-
-    if player_name == "Lilina":
-        $ player_name= "Lilina"
-        v "She's REALLY hot"
-    if player_name == "Felicia":
-        $player_name= "Felicia"
-        v "WE GOT TROUBLE!!!!"
         jump splashscreen
 
     if player_name == "Restart":
