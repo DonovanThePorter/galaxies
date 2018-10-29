@@ -2,33 +2,15 @@
 errors listed below, and try again.
 
 
-The label pTest is defined twice, at
-  File "game/pTest.rpy", line 1 and
-  File "game/script.rpy", line 100.
+File "game/script.rpy", line 98: invalid syntax
+    player_name= "Lilina":
+                          ^
+    
 
-The label q1 is defined twice, at
-  File "game/pTest.rpy", line 13 and
-  File "game/script.rpy", line 112.
-
-The label q2 is defined twice, at
-  File "game/pTest.rpy", line 31 and
-  File "game/script.rpy", line 130.
-
-The label q3 is defined twice, at
-  File "game/pTest.rpy", line 49 and
-  File "game/script.rpy", line 148.
-
-The label q4 is defined twice, at
-  File "game/pTest.rpy", line 67 and
-  File "game/script.rpy", line 166.
-
-The label q5 is defined twice, at
-  File "game/pTest.rpy", line 84 and
-  File "game/script.rpy", line 183.
-
-The label score is defined twice, at
-  File "game/pTest.rpy", line 101 and
-  File "game/script.rpy", line 200.
+File "game/script.rpy", line 101: invalid syntax
+    player_name= "Felicia":
+                           ^
+    
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Sun Oct 28 18:46:54 2018
+Sun Oct 28 21:31:40 2018

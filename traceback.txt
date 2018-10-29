@@ -1,26 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/credits.rpy", line 23, in script
-    image cred = images/Ika11
-  File "game/credits.rpy", line 23, in <module>
-    image cred = images/Ika11
-NameError: name 'images' is not defined
+  File "game/script.rpy", line 102, in script
+    V "WE GOT TROUBLE!!!!"
+Exception: Sayer 'V' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/credits.rpy", line 23, in script
-    image cred = images/Ika11
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\ast.py", line 981, in execute
-    img = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\owner\Downloads\RenPy\renpy-7.1.1-sdk\renpy\python.py", line 1937, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/credits.rpy", line 23, in <module>
-    image cred = images/Ika11
-NameError: name 'images' is not defined
+  File "game/script.rpy", line 102, in script
+    V "WE GOT TROUBLE!!!!"
+  File "C:\Users\anthony\Desktop\Project Galaxy\renpy-7.1.1-sdk\renpy\ast.py", line 650, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\anthony\Desktop\Project Galaxy\renpy-7.1.1-sdk\renpy\ast.py", line 560, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'V' is not defined.
 
 Windows-8-6.2.9200
 Ren'Py 7.1.1.929
- 
-Sun Oct 28 19:09:31 2018
+Galaxies 0.0.5 alpha
+Sun Oct 28 21:33:09 2018

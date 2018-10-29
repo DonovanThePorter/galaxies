@@ -68,11 +68,11 @@ label name:
 
     if player_name == "Anthony":
         $ player_name="Anthony"
-        v "That's a cool name!"
+        v "Are you a fan of Salad and Doritoes?"
 
     if player_name == "Ant":
         $ player_name="Ant"
-        v "That's a cool name!"
+        v "Squish it!"
 
     if player_name == "Eli":
         $ player_name="Eli"
@@ -84,11 +84,23 @@ label name:
 
     if player_name == "Credits":
         $ player_name="Credits"
-        jump credits        
+        jump credits
 
     if player_name == "Maki":
         $ player_name="Maki"
         v "That's a really pretty name!"
+
+    if player_name == "Umi":
+        $ player_name= "Umi"
+        v "Thank you for becoming the best waifu to exist"
+
+    if player_name == "Lilina":
+        $ player_name= "Lilina"
+        v "She's REALLY hot"
+    if player_name == "Felicia":
+        $player_name= "Felicia"
+        v "WE GOT TROUBLE!!!!"
+        jump splashscreen
 
     if player_name == "Restart":
         $ player_name="Restart"
